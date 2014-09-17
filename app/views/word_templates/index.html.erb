@@ -1,0 +1,14 @@
+<div ng-init = "words.getWords()">
+{{ words.greeting }}
+
+<form ng-submit="words.addWord(newWord)">
+  <input type="text" ng-model="newWord.name">
+  <button> Save </button>
+</form>
+
+
+<div ng-repeat="word in words.wordArr">
+  <p>{{word.name}}</p>
+</div>
+
+</div>
